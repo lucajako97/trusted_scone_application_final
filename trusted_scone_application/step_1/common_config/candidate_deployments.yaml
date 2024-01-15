@@ -1,0 +1,13 @@
+Components:
+  component1:
+    name: server
+    candidateExecutionLayers:
+      - 1
+    Containers:
+      container1:
+        image: 
+        memorySize: 1536
+        computingUnits: 0.9
+        GPURequirement: false
+        candidateExecutionResources:
+          - VM1

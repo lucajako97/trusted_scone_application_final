@@ -1,0 +1,49 @@
+System:
+  name: trusted_scone_application
+  NetworkDomains:
+    ND1:
+      name: Network Domain 1
+      AccessDelay: 2.77e-06
+      Bandwidth: 40000
+      subNetworkDomains: []
+      ComputationalLayers:
+        computationalLayer1:
+          name: Private cloud Layer
+          number: 1
+          type: Virtual
+          Resources:
+            resource1:
+              name: VM1
+              totalNodes: 4
+              description: Inhouse VM Type 1 UPV
+              cost: 0.675
+              memorySize: 2048
+              storageSize: 25
+              storageType: SSD
+              operatingSystemDistribution: Ubuntu
+              operatingSystemType: Linux
+              operatingSystemVersion: 22.04
+              operatingSystemImageId: ost://horsemen.i3m.upv.es/79095fa5-7baf-493c-9514-e24d52dd1527
+              secureBoot: false
+              measuredBoot: false
+              onSpot: false
+              processors:
+                processor1:
+                  name: Xeon
+                  type: SkyLake
+                  architecture: amd64
+                  computingUnits: 1
+                  internalMemory: 64
+                  SGXFlag: false
+  Components:
+    component1:
+      name: server
+      executionLayer: 1
+      Containers:
+        container1:
+          image: null
+          memorySize: 1536
+          computingUnits: 0.9
+          GPURequirement: false
+          selectedExecutionResource: VM1
+  DeploymentName: base

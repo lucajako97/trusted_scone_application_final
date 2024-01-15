@@ -1,0 +1,10 @@
+trusted_scone_application/src/server/main.py:
+  component_name:
+    name: server
+  security:
+    confProc: false
+    confRest: false
+    filesystemShield: true
+    integrityProc: false
+    networkShield: true
+    trustedExecution: true
