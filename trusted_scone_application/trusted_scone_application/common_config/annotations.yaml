@@ -4,7 +4,7 @@ trusted_scone_application/src/server/main.py:
   security:
     confProc: false
     confRest: false
-    filesystemShield: true
+    filesystemShield: false
     integrityProc: false
-    networkShield: true
+    networkShield: false
     trustedExecution: true

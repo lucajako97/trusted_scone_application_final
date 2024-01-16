@@ -1,0 +1,4 @@
+components:
+  server:
+    docker_images:
+    - docker.io/lucajako97/server_base_amd64:latest

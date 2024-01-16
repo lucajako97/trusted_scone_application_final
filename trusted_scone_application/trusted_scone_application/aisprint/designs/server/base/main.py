@@ -24,7 +24,7 @@ output_filename = "./mains_csv/MainTerminal_PhaseCount.csv"
 
 
 @component_name(name='server')
-@security(trustedExecution=True, networkShield=True, filesystemShield=True,
+@security(trustedExecution=True, networkShield=False, filesystemShield=False,
 		confProc=False, integrityProc=False, confRest=False)
 def main(args):
     # check if the file path exists
